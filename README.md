@@ -28,6 +28,8 @@ Please wait while the `.gif` files are loading...
 - Minimum deployment target is `iOS 14.0`
 - `Swift 5.3`
 - Pure `SwiftUI 2.0` app
+- Score & merge streak system: when multiple merges occur in a row - you got a score multiplier 😎
+- Pure `SwiftUI 2.0` app
 - Settings
 - Interactive transitions
 - Property list based persistence for `Settings`
