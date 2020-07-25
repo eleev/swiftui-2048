@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>gameState</key>
+	<dict>
+		<key>gameOverTitle</key>
+		<string>Game Over</string>
+		<key>gameOverSubtitle</key>
+		<string>Your score is </string>
+		<key>resetGameTitle</key>
+		<string>Reset Game?</string>
+		<key>resetGameSubtitle</key>
+		<string>Your progress will be lost</string>
+	</dict>
+	<key>settings</key>
+	<dict>
+		<key>gameBoardDescription</key>
+		<string>Please note that the current gaming session will be reset</string>
+		<key>gameBoardSize</key>
+		<string>Game Board Size</string>
+		<key>audio</key>
+		<string>Audio</string>
+		<key>audioDescription</key>
+		<string>All the internal sounds will be either turned on or off</string>
+	</dict>
+	<key>about</key>
+	<dict>
+		<key>linkDescription</key>
+		<string>Open Source application available under MIT Licence</string>
+		<key>linkUrl</key>
+		<string>https://github.com/jVirus</string>
+		<key>copyright</key>
+		<string>©Astemir Eleev, 2020</string>
+	</dict>
+</dict>
+</plist>

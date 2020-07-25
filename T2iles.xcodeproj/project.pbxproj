@@ -8,11 +8,63 @@
 
 /* Begin PBXBuildFile section */
 		A9757EAC24CC47EC00847031 /* T2ilesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EAB24CC47EC00847031 /* T2ilesApp.swift */; };
-		A9757EAE24CC47EC00847031 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EAD24CC47EC00847031 /* ContentView.swift */; };
-		A9757EB024CC47EC00847031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9757EAF24CC47EC00847031 /* Assets.xcassets */; };
 		A9757EB324CC47EC00847031 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9757EB224CC47EC00847031 /* Preview Assets.xcassets */; };
-		A9757EBE24CC47EC00847031 /* T2ilesTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EBD24CC47EC00847031 /* T2ilesTests.swift */; };
-		A9757EC924CC47EC00847031 /* T2ilesUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EC824CC47EC00847031 /* T2ilesUITests.swift */; };
+		A9757EBE24CC47EC00847031 /* DirectionTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EBD24CC47EC00847031 /* DirectionTests.swift */; };
+		A9757EC924CC47EC00847031 /* AppLaunchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EC824CC47EC00847031 /* AppLaunchUITests.swift */; };
+		A9757F1F24CC481E00847031 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A9757ED724CC481E00847031 /* Assets.xcassets */; };
+		A9757F2024CC481E00847031 /* Merge.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9757ED924CC481E00847031 /* Merge.mp3 */; };
+		A9757F2124CC481E00847031 /* License.txt in Resources */ = {isa = PBXBuildFile; fileRef = A9757EDA24CC481E00847031 /* License.txt */; };
+		A9757F2224CC481E00847031 /* Add.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A9757EDB24CC481E00847031 /* Add.mp3 */; };
+		A9757F2324CC481E00847031 /* Strings.plist in Resources */ = {isa = PBXBuildFile; fileRef = A9757EDC24CC481E00847031 /* Strings.plist */; };
+		A9757F2424CC481E00847031 /* ColorSchemeBackgroundThemeEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EDF24CC481E00847031 /* ColorSchemeBackgroundThemeEnvironmentKey.swift */; };
+		A9757F2524CC481E00847031 /* TileColorThemeEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE024CC481E00847031 /* TileColorThemeEnvironmentKey.swift */; };
+		A9757F2624CC481E00847031 /* TileBoardSizeEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE124CC481E00847031 /* TileBoardSizeEnvironmentKey.swift */; };
+		A9757F2724CC481E00847031 /* GameBoardSizeEnvironmentKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE224CC481E00847031 /* GameBoardSizeEnvironmentKey.swift */; };
+		A9757F2824CC481E00847031 /* PlistConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE524CC481E00847031 /* PlistConfiguration.swift */; };
+		A9757F2924CC481E00847031 /* PlistConfigurationKeyPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE624CC481E00847031 /* PlistConfigurationKeyPath.swift */; };
+		A9757F2A24CC481E00847031 /* AppStorageKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE724CC481E00847031 /* AppStorageKeys.swift */; };
+		A9757F2B24CC481E00847031 /* SelectedView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EE924CC481E00847031 /* SelectedView.swift */; };
+		A9757F2C24CC481E00847031 /* GameLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EEB24CC481E00847031 /* GameLogic.swift */; };
+		A9757F2D24CC481E00847031 /* BoardSize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EEC24CC481E00847031 /* BoardSize.swift */; };
+		A9757F2E24CC481E00847031 /* GameBoardSizeState.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EED24CC481E00847031 /* GameBoardSizeState.swift */; };
+		A9757F2F24CC481E00847031 /* TileMatrix.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EEF24CC481E00847031 /* TileMatrix.swift */; };
+		A9757F3024CC481E00847031 /* ColorSchemeBackgroundTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF124CC481E00847031 /* ColorSchemeBackgroundTheme.swift */; };
+		A9757F3124CC481E00847031 /* TileColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF224CC481E00847031 /* TileColorTheme.swift */; };
+		A9757F3224CC481E00847031 /* StandardTileColorTheme.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF324CC481E00847031 /* StandardTileColorTheme.swift */; };
+		A9757F3324CC481E00847031 /* Tile.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF424CC481E00847031 /* Tile.swift */; };
+		A9757F3424CC481E00847031 /* Direction.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF524CC481E00847031 /* Direction.swift */; };
+		A9757F3524CC481E00847031 /* Edge+InvertedDirection.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF724CC481E00847031 /* Edge+InvertedDirection.swift */; };
+		A9757F3624CC481E00847031 /* AnyTransition+TileGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF824CC481E00847031 /* AnyTransition+TileGenerator.swift */; };
+		A9757F3724CC481E00847031 /* Animation+ModalSpring.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EF924CC481E00847031 /* Animation+ModalSpring.swift */; };
+		A9757F3824CC481E00847031 /* View+Center.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EFB24CC481E00847031 /* View+Center.swift */; };
+		A9757F3924CC481E00847031 /* View+EraseToAnyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EFC24CC481E00847031 /* View+EraseToAnyView.swift */; };
+		A9757F3A24CC481E00847031 /* Notification.Name+Keys.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EFD24CC481E00847031 /* Notification.Name+Keys.swift */; };
+		A9757F3B24CC481E00847031 /* FilledBackgroundStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757EFF24CC481E00847031 /* FilledBackgroundStyle.swift */; };
+		A9757F3C24CC481E00847031 /* CheckboxToggleStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0024CC481E00847031 /* CheckboxToggleStyle.swift */; };
+		A9757F3D24CC481E00847031 /* Audio.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0224CC481E00847031 /* Audio.swift */; };
+		A9757F3E24CC481E00847031 /* AudioSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0324CC481E00847031 /* AudioSource.swift */; };
+		A9757F3F24CC481E00847031 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0624CC481E00847031 /* SettingsView.swift */; };
+		A9757F4024CC481E00847031 /* TileBoardSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0724CC481E00847031 /* TileBoardSettingView.swift */; };
+		A9757F4124CC481E00847031 /* AudioSettingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0824CC481E00847031 /* AudioSettingView.swift */; };
+		A9757F4224CC481E00847031 /* SideMenuView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0A24CC481E00847031 /* SideMenuView.swift */; };
+		A9757F4324CC481E00847031 /* CompositeSideView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0B24CC481E00847031 /* CompositeSideView.swift */; };
+		A9757F4424CC481E00847031 /* AboutView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0D24CC481E00847031 /* AboutView.swift */; };
+		A9757F4524CC481E00847031 /* TileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F0F24CC481E00847031 /* TileView.swift */; };
+		A9757F4624CC481E00847031 /* TileBoardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1024CC481E00847031 /* TileBoardView.swift */; };
+		A9757F4724CC481E00847031 /* GameStateBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1124CC481E00847031 /* GameStateBottomView.swift */; };
+		A9757F4824CC481E00847031 /* ModalView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1324CC481E00847031 /* ModalView.swift */; };
+		A9757F4924CC481E00847031 /* HeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1424CC481E00847031 /* HeaderView.swift */; };
+		A9757F4A24CC481E00847031 /* CompositeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1524CC481E00847031 /* CompositeView.swift */; };
+		A9757F4B24CC481E00847031 /* FactoryContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1624CC481E00847031 /* FactoryContentView.swift */; };
+		A9757F4C24CC481E00847031 /* Merged.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1824CC481E00847031 /* Merged.swift */; };
+		A9757F4D24CC481E00847031 /* AnchoredScale.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1924CC481E00847031 /* AnchoredScale.swift */; };
+		A9757F4E24CC481E00847031 /* SlideViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1A24CC481E00847031 /* SlideViewModifier.swift */; };
+		A9757F4F24CC481E00847031 /* MainViewModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1B24CC481E00847031 /* MainViewModifier.swift */; };
+		A9757F5024CC481E00847031 /* BottomSlidableModalModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1C24CC481E00847031 /* BottomSlidableModalModifier.swift */; };
+		A9757F5124CC481E00847031 /* BlurEffect.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1D24CC481E00847031 /* BlurEffect.swift */; };
+		A9757F5224CC481E00847031 /* RoundedClippedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1E24CC481E00847031 /* RoundedClippedBackground.swift */; };
+		A9757F5424CC497400847031 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5324CC497400847031 /* .gitignore */; };
+		A9757F5624CC4C9F00847031 /* GameBoardSizeStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F5524CC4C9F00847031 /* GameBoardSizeStateTests.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -35,16 +87,68 @@
 /* Begin PBXFileReference section */
 		A9757EA824CC47EC00847031 /* T2iles.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = T2iles.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A9757EAB24CC47EC00847031 /* T2ilesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T2ilesApp.swift; sourceTree = "<group>"; };
-		A9757EAD24CC47EC00847031 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		A9757EAF24CC47EC00847031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A9757EB224CC47EC00847031 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		A9757EB424CC47EC00847031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9757EB924CC47EC00847031 /* T2ilesTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T2ilesTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9757EBD24CC47EC00847031 /* T2ilesTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T2ilesTests.swift; sourceTree = "<group>"; };
+		A9757EBD24CC47EC00847031 /* DirectionTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DirectionTests.swift; sourceTree = "<group>"; };
 		A9757EBF24CC47EC00847031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A9757EC424CC47EC00847031 /* T2ilesUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = T2ilesUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		A9757EC824CC47EC00847031 /* T2ilesUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = T2ilesUITests.swift; sourceTree = "<group>"; };
+		A9757EC824CC47EC00847031 /* AppLaunchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppLaunchUITests.swift; sourceTree = "<group>"; };
 		A9757ECA24CC47EC00847031 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A9757ED724CC481E00847031 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		A9757ED924CC481E00847031 /* Merge.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Merge.mp3; sourceTree = "<group>"; };
+		A9757EDA24CC481E00847031 /* License.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = License.txt; sourceTree = "<group>"; };
+		A9757EDB24CC481E00847031 /* Add.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Add.mp3; sourceTree = "<group>"; };
+		A9757EDC24CC481E00847031 /* Strings.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Strings.plist; sourceTree = "<group>"; };
+		A9757EDF24CC481E00847031 /* ColorSchemeBackgroundThemeEnvironmentKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchemeBackgroundThemeEnvironmentKey.swift; sourceTree = "<group>"; };
+		A9757EE024CC481E00847031 /* TileColorThemeEnvironmentKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileColorThemeEnvironmentKey.swift; sourceTree = "<group>"; };
+		A9757EE124CC481E00847031 /* TileBoardSizeEnvironmentKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileBoardSizeEnvironmentKey.swift; sourceTree = "<group>"; };
+		A9757EE224CC481E00847031 /* GameBoardSizeEnvironmentKey.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardSizeEnvironmentKey.swift; sourceTree = "<group>"; };
+		A9757EE524CC481E00847031 /* PlistConfiguration.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistConfiguration.swift; sourceTree = "<group>"; };
+		A9757EE624CC481E00847031 /* PlistConfigurationKeyPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PlistConfigurationKeyPath.swift; sourceTree = "<group>"; };
+		A9757EE724CC481E00847031 /* AppStorageKeys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppStorageKeys.swift; sourceTree = "<group>"; };
+		A9757EE924CC481E00847031 /* SelectedView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SelectedView.swift; sourceTree = "<group>"; };
+		A9757EEB24CC481E00847031 /* GameLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameLogic.swift; sourceTree = "<group>"; };
+		A9757EEC24CC481E00847031 /* BoardSize.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BoardSize.swift; sourceTree = "<group>"; };
+		A9757EED24CC481E00847031 /* GameBoardSizeState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameBoardSizeState.swift; sourceTree = "<group>"; };
+		A9757EEF24CC481E00847031 /* TileMatrix.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileMatrix.swift; sourceTree = "<group>"; };
+		A9757EF124CC481E00847031 /* ColorSchemeBackgroundTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ColorSchemeBackgroundTheme.swift; sourceTree = "<group>"; };
+		A9757EF224CC481E00847031 /* TileColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileColorTheme.swift; sourceTree = "<group>"; };
+		A9757EF324CC481E00847031 /* StandardTileColorTheme.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StandardTileColorTheme.swift; sourceTree = "<group>"; };
+		A9757EF424CC481E00847031 /* Tile.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Tile.swift; sourceTree = "<group>"; };
+		A9757EF524CC481E00847031 /* Direction.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Direction.swift; sourceTree = "<group>"; };
+		A9757EF724CC481E00847031 /* Edge+InvertedDirection.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Edge+InvertedDirection.swift"; sourceTree = "<group>"; };
+		A9757EF824CC481E00847031 /* AnyTransition+TileGenerator.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "AnyTransition+TileGenerator.swift"; sourceTree = "<group>"; };
+		A9757EF924CC481E00847031 /* Animation+ModalSpring.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Animation+ModalSpring.swift"; sourceTree = "<group>"; };
+		A9757EFB24CC481E00847031 /* View+Center.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+Center.swift"; sourceTree = "<group>"; };
+		A9757EFC24CC481E00847031 /* View+EraseToAnyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "View+EraseToAnyView.swift"; sourceTree = "<group>"; };
+		A9757EFD24CC481E00847031 /* Notification.Name+Keys.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Notification.Name+Keys.swift"; sourceTree = "<group>"; };
+		A9757EFF24CC481E00847031 /* FilledBackgroundStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FilledBackgroundStyle.swift; sourceTree = "<group>"; };
+		A9757F0024CC481E00847031 /* CheckboxToggleStyle.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CheckboxToggleStyle.swift; sourceTree = "<group>"; };
+		A9757F0224CC481E00847031 /* Audio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Audio.swift; sourceTree = "<group>"; };
+		A9757F0324CC481E00847031 /* AudioSource.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSource.swift; sourceTree = "<group>"; };
+		A9757F0624CC481E00847031 /* SettingsView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		A9757F0724CC481E00847031 /* TileBoardSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileBoardSettingView.swift; sourceTree = "<group>"; };
+		A9757F0824CC481E00847031 /* AudioSettingView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AudioSettingView.swift; sourceTree = "<group>"; };
+		A9757F0A24CC481E00847031 /* SideMenuView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SideMenuView.swift; sourceTree = "<group>"; };
+		A9757F0B24CC481E00847031 /* CompositeSideView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeSideView.swift; sourceTree = "<group>"; };
+		A9757F0D24CC481E00847031 /* AboutView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AboutView.swift; sourceTree = "<group>"; };
+		A9757F0F24CC481E00847031 /* TileView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileView.swift; sourceTree = "<group>"; };
+		A9757F1024CC481E00847031 /* TileBoardView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TileBoardView.swift; sourceTree = "<group>"; };
+		A9757F1124CC481E00847031 /* GameStateBottomView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameStateBottomView.swift; sourceTree = "<group>"; };
+		A9757F1324CC481E00847031 /* ModalView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ModalView.swift; sourceTree = "<group>"; };
+		A9757F1424CC481E00847031 /* HeaderView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HeaderView.swift; sourceTree = "<group>"; };
+		A9757F1524CC481E00847031 /* CompositeView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeView.swift; sourceTree = "<group>"; };
+		A9757F1624CC481E00847031 /* FactoryContentView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FactoryContentView.swift; sourceTree = "<group>"; };
+		A9757F1824CC481E00847031 /* Merged.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Merged.swift; sourceTree = "<group>"; };
+		A9757F1924CC481E00847031 /* AnchoredScale.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AnchoredScale.swift; sourceTree = "<group>"; };
+		A9757F1A24CC481E00847031 /* SlideViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SlideViewModifier.swift; sourceTree = "<group>"; };
+		A9757F1B24CC481E00847031 /* MainViewModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MainViewModifier.swift; sourceTree = "<group>"; };
+		A9757F1C24CC481E00847031 /* BottomSlidableModalModifier.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BottomSlidableModalModifier.swift; sourceTree = "<group>"; };
+		A9757F1D24CC481E00847031 /* BlurEffect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BlurEffect.swift; sourceTree = "<group>"; };
+		A9757F1E24CC481E00847031 /* RoundedClippedBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedClippedBackground.swift; sourceTree = "<group>"; };
+		A9757F5324CC497400847031 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
+		A9757F5524CC4C9F00847031 /* GameBoardSizeStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardSizeStateTests.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +179,7 @@
 		A9757E9F24CC47EB00847031 = {
 			isa = PBXGroup;
 			children = (
+				A9757F5324CC497400847031 /* .gitignore */,
 				A9757EAA24CC47EC00847031 /* T2iles */,
 				A9757EBC24CC47EC00847031 /* T2ilesTests */,
 				A9757EC724CC47EC00847031 /* T2ilesUITests */,
@@ -95,11 +200,10 @@
 		A9757EAA24CC47EC00847031 /* T2iles */ = {
 			isa = PBXGroup;
 			children = (
-				A9757EAB24CC47EC00847031 /* T2ilesApp.swift */,
-				A9757EAD24CC47EC00847031 /* ContentView.swift */,
-				A9757EAF24CC47EC00847031 /* Assets.xcassets */,
 				A9757EB424CC47EC00847031 /* Info.plist */,
+				A9757ED624CC481E00847031 /* Assets */,
 				A9757EB124CC47EC00847031 /* Preview Content */,
+				A9757EDD24CC481E00847031 /* Sources */,
 			);
 			path = T2iles;
 			sourceTree = "<group>";
@@ -115,8 +219,9 @@
 		A9757EBC24CC47EC00847031 /* T2ilesTests */ = {
 			isa = PBXGroup;
 			children = (
-				A9757EBD24CC47EC00847031 /* T2ilesTests.swift */,
 				A9757EBF24CC47EC00847031 /* Info.plist */,
+				A9757EBD24CC47EC00847031 /* DirectionTests.swift */,
+				A9757F5524CC4C9F00847031 /* GameBoardSizeStateTests.swift */,
 			);
 			path = T2ilesTests;
 			sourceTree = "<group>";
@@ -124,10 +229,229 @@
 		A9757EC724CC47EC00847031 /* T2ilesUITests */ = {
 			isa = PBXGroup;
 			children = (
-				A9757EC824CC47EC00847031 /* T2ilesUITests.swift */,
 				A9757ECA24CC47EC00847031 /* Info.plist */,
+				A9757EC824CC47EC00847031 /* AppLaunchUITests.swift */,
 			);
 			path = T2ilesUITests;
+			sourceTree = "<group>";
+		};
+		A9757ED624CC481E00847031 /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EDC24CC481E00847031 /* Strings.plist */,
+				A9757ED724CC481E00847031 /* Assets.xcassets */,
+				A9757ED824CC481E00847031 /* Audio */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		A9757ED824CC481E00847031 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A9757ED924CC481E00847031 /* Merge.mp3 */,
+				A9757EDA24CC481E00847031 /* License.txt */,
+				A9757EDB24CC481E00847031 /* Add.mp3 */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A9757EDD24CC481E00847031 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EAB24CC47EC00847031 /* T2ilesApp.swift */,
+				A9757F0124CC481E00847031 /* Audio */,
+				A9757EDE24CC481E00847031 /* Enviroment Keys */,
+				A9757EF624CC481E00847031 /* Extensions */,
+				A9757EE824CC481E00847031 /* Models */,
+				A9757EFE24CC481E00847031 /* Styles */,
+				A9757EE324CC481E00847031 /* Utils */,
+				A9757F1724CC481E00847031 /* View Modifiers */,
+				A9757F0424CC481E00847031 /* Views */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		A9757EDE24CC481E00847031 /* Enviroment Keys */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EDF24CC481E00847031 /* ColorSchemeBackgroundThemeEnvironmentKey.swift */,
+				A9757EE024CC481E00847031 /* TileColorThemeEnvironmentKey.swift */,
+				A9757EE124CC481E00847031 /* TileBoardSizeEnvironmentKey.swift */,
+				A9757EE224CC481E00847031 /* GameBoardSizeEnvironmentKey.swift */,
+			);
+			path = "Enviroment Keys";
+			sourceTree = "<group>";
+		};
+		A9757EE324CC481E00847031 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EE424CC481E00847031 /* Plist */,
+				A9757EE724CC481E00847031 /* AppStorageKeys.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A9757EE424CC481E00847031 /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EE524CC481E00847031 /* PlistConfiguration.swift */,
+				A9757EE624CC481E00847031 /* PlistConfigurationKeyPath.swift */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		A9757EE824CC481E00847031 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EF524CC481E00847031 /* Direction.swift */,
+				A9757EE924CC481E00847031 /* SelectedView.swift */,
+				A9757EEA24CC481E00847031 /* Board */,
+				A9757EEE24CC481E00847031 /* Tiles */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		A9757EEA24CC481E00847031 /* Board */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EEB24CC481E00847031 /* GameLogic.swift */,
+				A9757EEC24CC481E00847031 /* BoardSize.swift */,
+				A9757EED24CC481E00847031 /* GameBoardSizeState.swift */,
+			);
+			path = Board;
+			sourceTree = "<group>";
+		};
+		A9757EEE24CC481E00847031 /* Tiles */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EF424CC481E00847031 /* Tile.swift */,
+				A9757EEF24CC481E00847031 /* TileMatrix.swift */,
+				A9757EF024CC481E00847031 /* Theme */,
+			);
+			path = Tiles;
+			sourceTree = "<group>";
+		};
+		A9757EF024CC481E00847031 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EF124CC481E00847031 /* ColorSchemeBackgroundTheme.swift */,
+				A9757EF224CC481E00847031 /* TileColorTheme.swift */,
+				A9757EF324CC481E00847031 /* StandardTileColorTheme.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		A9757EF624CC481E00847031 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EF724CC481E00847031 /* Edge+InvertedDirection.swift */,
+				A9757EF824CC481E00847031 /* AnyTransition+TileGenerator.swift */,
+				A9757EF924CC481E00847031 /* Animation+ModalSpring.swift */,
+				A9757EFA24CC481E00847031 /* View */,
+				A9757EFD24CC481E00847031 /* Notification.Name+Keys.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		A9757EFA24CC481E00847031 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EFB24CC481E00847031 /* View+Center.swift */,
+				A9757EFC24CC481E00847031 /* View+EraseToAnyView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A9757EFE24CC481E00847031 /* Styles */ = {
+			isa = PBXGroup;
+			children = (
+				A9757EFF24CC481E00847031 /* FilledBackgroundStyle.swift */,
+				A9757F0024CC481E00847031 /* CheckboxToggleStyle.swift */,
+			);
+			path = Styles;
+			sourceTree = "<group>";
+		};
+		A9757F0124CC481E00847031 /* Audio */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F0224CC481E00847031 /* Audio.swift */,
+				A9757F0324CC481E00847031 /* AudioSource.swift */,
+			);
+			path = Audio;
+			sourceTree = "<group>";
+		};
+		A9757F0424CC481E00847031 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F0524CC481E00847031 /* Settings */,
+				A9757F0924CC481E00847031 /* Side */,
+				A9757F0C24CC481E00847031 /* About */,
+				A9757F0E24CC481E00847031 /* Game */,
+				A9757F1224CC481E00847031 /* Main */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		A9757F0524CC481E00847031 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F0624CC481E00847031 /* SettingsView.swift */,
+				A9757F0724CC481E00847031 /* TileBoardSettingView.swift */,
+				A9757F0824CC481E00847031 /* AudioSettingView.swift */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		A9757F0924CC481E00847031 /* Side */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F0A24CC481E00847031 /* SideMenuView.swift */,
+				A9757F0B24CC481E00847031 /* CompositeSideView.swift */,
+			);
+			path = Side;
+			sourceTree = "<group>";
+		};
+		A9757F0C24CC481E00847031 /* About */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F0D24CC481E00847031 /* AboutView.swift */,
+			);
+			path = About;
+			sourceTree = "<group>";
+		};
+		A9757F0E24CC481E00847031 /* Game */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F0F24CC481E00847031 /* TileView.swift */,
+				A9757F1024CC481E00847031 /* TileBoardView.swift */,
+				A9757F1124CC481E00847031 /* GameStateBottomView.swift */,
+			);
+			path = Game;
+			sourceTree = "<group>";
+		};
+		A9757F1224CC481E00847031 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F1324CC481E00847031 /* ModalView.swift */,
+				A9757F1424CC481E00847031 /* HeaderView.swift */,
+				A9757F1524CC481E00847031 /* CompositeView.swift */,
+				A9757F1624CC481E00847031 /* FactoryContentView.swift */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		A9757F1724CC481E00847031 /* View Modifiers */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F1824CC481E00847031 /* Merged.swift */,
+				A9757F1924CC481E00847031 /* AnchoredScale.swift */,
+				A9757F1A24CC481E00847031 /* SlideViewModifier.swift */,
+				A9757F1B24CC481E00847031 /* MainViewModifier.swift */,
+				A9757F1C24CC481E00847031 /* BottomSlidableModalModifier.swift */,
+				A9757F1D24CC481E00847031 /* BlurEffect.swift */,
+				A9757F1E24CC481E00847031 /* RoundedClippedBackground.swift */,
+			);
+			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -233,8 +557,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9757F2224CC481E00847031 /* Add.mp3 in Resources */,
+				A9757F5424CC497400847031 /* .gitignore in Resources */,
 				A9757EB324CC47EC00847031 /* Preview Assets.xcassets in Resources */,
-				A9757EB024CC47EC00847031 /* Assets.xcassets in Resources */,
+				A9757F2124CC481E00847031 /* License.txt in Resources */,
+				A9757F1F24CC481E00847031 /* Assets.xcassets in Resources */,
+				A9757F2024CC481E00847031 /* Merge.mp3 in Resources */,
+				A9757F2324CC481E00847031 /* Strings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,8 +588,54 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9757EAE24CC47EC00847031 /* ContentView.swift in Sources */,
+				A9757F3924CC481E00847031 /* View+EraseToAnyView.swift in Sources */,
+				A9757F2824CC481E00847031 /* PlistConfiguration.swift in Sources */,
+				A9757F4C24CC481E00847031 /* Merged.swift in Sources */,
+				A9757F3A24CC481E00847031 /* Notification.Name+Keys.swift in Sources */,
+				A9757F2C24CC481E00847031 /* GameLogic.swift in Sources */,
+				A9757F3024CC481E00847031 /* ColorSchemeBackgroundTheme.swift in Sources */,
+				A9757F2A24CC481E00847031 /* AppStorageKeys.swift in Sources */,
+				A9757F3624CC481E00847031 /* AnyTransition+TileGenerator.swift in Sources */,
+				A9757F2624CC481E00847031 /* TileBoardSizeEnvironmentKey.swift in Sources */,
+				A9757F3B24CC481E00847031 /* FilledBackgroundStyle.swift in Sources */,
+				A9757F4624CC481E00847031 /* TileBoardView.swift in Sources */,
+				A9757F2424CC481E00847031 /* ColorSchemeBackgroundThemeEnvironmentKey.swift in Sources */,
+				A9757F4E24CC481E00847031 /* SlideViewModifier.swift in Sources */,
+				A9757F2924CC481E00847031 /* PlistConfigurationKeyPath.swift in Sources */,
+				A9757F2E24CC481E00847031 /* GameBoardSizeState.swift in Sources */,
+				A9757F4F24CC481E00847031 /* MainViewModifier.swift in Sources */,
+				A9757F2724CC481E00847031 /* GameBoardSizeEnvironmentKey.swift in Sources */,
+				A9757F4924CC481E00847031 /* HeaderView.swift in Sources */,
+				A9757F2B24CC481E00847031 /* SelectedView.swift in Sources */,
+				A9757F4224CC481E00847031 /* SideMenuView.swift in Sources */,
+				A9757F3F24CC481E00847031 /* SettingsView.swift in Sources */,
+				A9757F2D24CC481E00847031 /* BoardSize.swift in Sources */,
+				A9757F4724CC481E00847031 /* GameStateBottomView.swift in Sources */,
+				A9757F4B24CC481E00847031 /* FactoryContentView.swift in Sources */,
+				A9757F3224CC481E00847031 /* StandardTileColorTheme.swift in Sources */,
+				A9757F5024CC481E00847031 /* BottomSlidableModalModifier.swift in Sources */,
+				A9757F4824CC481E00847031 /* ModalView.swift in Sources */,
+				A9757F4A24CC481E00847031 /* CompositeView.swift in Sources */,
+				A9757F3E24CC481E00847031 /* AudioSource.swift in Sources */,
+				A9757F3524CC481E00847031 /* Edge+InvertedDirection.swift in Sources */,
+				A9757F3724CC481E00847031 /* Animation+ModalSpring.swift in Sources */,
+				A9757F4524CC481E00847031 /* TileView.swift in Sources */,
+				A9757F3424CC481E00847031 /* Direction.swift in Sources */,
+				A9757F4324CC481E00847031 /* CompositeSideView.swift in Sources */,
+				A9757F3D24CC481E00847031 /* Audio.swift in Sources */,
 				A9757EAC24CC47EC00847031 /* T2ilesApp.swift in Sources */,
+				A9757F2F24CC481E00847031 /* TileMatrix.swift in Sources */,
+				A9757F3824CC481E00847031 /* View+Center.swift in Sources */,
+				A9757F3324CC481E00847031 /* Tile.swift in Sources */,
+				A9757F4424CC481E00847031 /* AboutView.swift in Sources */,
+				A9757F2524CC481E00847031 /* TileColorThemeEnvironmentKey.swift in Sources */,
+				A9757F4124CC481E00847031 /* AudioSettingView.swift in Sources */,
+				A9757F4024CC481E00847031 /* TileBoardSettingView.swift in Sources */,
+				A9757F3C24CC481E00847031 /* CheckboxToggleStyle.swift in Sources */,
+				A9757F5124CC481E00847031 /* BlurEffect.swift in Sources */,
+				A9757F5224CC481E00847031 /* RoundedClippedBackground.swift in Sources */,
+				A9757F4D24CC481E00847031 /* AnchoredScale.swift in Sources */,
+				A9757F3124CC481E00847031 /* TileColorTheme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -268,7 +643,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9757EBE24CC47EC00847031 /* T2ilesTests.swift in Sources */,
+				A9757EBE24CC47EC00847031 /* DirectionTests.swift in Sources */,
+				A9757F5624CC4C9F00847031 /* GameBoardSizeStateTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,7 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A9757EC924CC47EC00847031 /* T2ilesUITests.swift in Sources */,
+				A9757EC924CC47EC00847031 /* AppLaunchUITests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -415,7 +791,7 @@
 		A9757ECE24CC47EC00847031 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Tiled-Plain";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"T2iles/Preview Content\"";
@@ -437,7 +813,7 @@
 		A9757ECF24CC47EC00847031 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Tiled-Plain";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"T2iles/Preview Content\"";
