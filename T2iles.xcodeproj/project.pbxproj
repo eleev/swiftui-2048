@@ -65,6 +65,11 @@
 		A9757F5224CC481E00847031 /* RoundedClippedBackground.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F1E24CC481E00847031 /* RoundedClippedBackground.swift */; };
 		A9757F5424CC497400847031 /* .gitignore in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5324CC497400847031 /* .gitignore */; };
 		A9757F5624CC4C9F00847031 /* GameBoardSizeStateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9757F5524CC4C9F00847031 /* GameBoardSizeStateTests.swift */; };
+		A9757F5D24CC571800847031 /* logo.png in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5724CC571800847031 /* logo.png */; };
+		A9757F5E24CC571800847031 /* 01.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5924CC571800847031 /* 01.gif */; };
+		A9757F5F24CC571800847031 /* 03.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5A24CC571800847031 /* 03.gif */; };
+		A9757F6024CC571800847031 /* 02.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5B24CC571800847031 /* 02.gif */; };
+		A9757F6124CC571800847031 /* 04.gif in Resources */ = {isa = PBXBuildFile; fileRef = A9757F5C24CC571800847031 /* 04.gif */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -149,6 +154,11 @@
 		A9757F1E24CC481E00847031 /* RoundedClippedBackground.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = RoundedClippedBackground.swift; sourceTree = "<group>"; };
 		A9757F5324CC497400847031 /* .gitignore */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = .gitignore; sourceTree = "<group>"; };
 		A9757F5524CC4C9F00847031 /* GameBoardSizeStateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameBoardSizeStateTests.swift; sourceTree = "<group>"; };
+		A9757F5724CC571800847031 /* logo.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo.png; sourceTree = "<group>"; };
+		A9757F5924CC571800847031 /* 01.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 01.gif; sourceTree = "<group>"; };
+		A9757F5A24CC571800847031 /* 03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 03.gif; sourceTree = "<group>"; };
+		A9757F5B24CC571800847031 /* 02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 02.gif; sourceTree = "<group>"; };
+		A9757F5C24CC571800847031 /* 04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 04.gif; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -180,6 +190,8 @@
 			isa = PBXGroup;
 			children = (
 				A9757F5324CC497400847031 /* .gitignore */,
+				A9757F5724CC571800847031 /* logo.png */,
+				A9757F5824CC571800847031 /* Resources */,
 				A9757EAA24CC47EC00847031 /* T2iles */,
 				A9757EBC24CC47EC00847031 /* T2ilesTests */,
 				A9757EC724CC47EC00847031 /* T2ilesUITests */,
@@ -454,6 +466,17 @@
 			path = "View Modifiers";
 			sourceTree = "<group>";
 		};
+		A9757F5824CC571800847031 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				A9757F5924CC571800847031 /* 01.gif */,
+				A9757F5A24CC571800847031 /* 03.gif */,
+				A9757F5B24CC571800847031 /* 02.gif */,
+				A9757F5C24CC571800847031 /* 04.gif */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -559,10 +582,15 @@
 			files = (
 				A9757F2224CC481E00847031 /* Add.mp3 in Resources */,
 				A9757F5424CC497400847031 /* .gitignore in Resources */,
+				A9757F6124CC571800847031 /* 04.gif in Resources */,
+				A9757F5E24CC571800847031 /* 01.gif in Resources */,
 				A9757EB324CC47EC00847031 /* Preview Assets.xcassets in Resources */,
 				A9757F2124CC481E00847031 /* License.txt in Resources */,
+				A9757F5F24CC571800847031 /* 03.gif in Resources */,
+				A9757F5D24CC571800847031 /* logo.png in Resources */,
 				A9757F1F24CC481E00847031 /* Assets.xcassets in Resources */,
 				A9757F2024CC481E00847031 /* Merge.mp3 in Resources */,
+				A9757F6024CC571800847031 /* 02.gif in Resources */,
 				A9757F2324CC481E00847031 /* Strings.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
