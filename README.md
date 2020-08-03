@@ -5,7 +5,7 @@
 [![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS-green.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-**Last Update: 25/July/2020.**
+**Last Update: 03/August/2020.**
 
 ![](logo.png)
 
