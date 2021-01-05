@@ -2,17 +2,17 @@
 
 [![Language](https://img.shields.io/badge/Language-Swift_5.3-orange.svg)]()
 [![Framework](https://img.shields.io/badge/Framework-SwiftUI_2.0-red.svg)]()
-[![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS-green.svg)]()
+[![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS|macOS-green.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-**Last Update: 03/August/2020.**
+**Last Update: 05/January/2021.**
 
 ![](logo.png)
 
 ### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About 
-🎲 **100%** `SwiftUI 2.0`, classic 2048 game. Supports both `iOS` & `iPadOS`. 
+🎲 **100%** `SwiftUI 2.0`, classic 2048 game. Supports `iOS`, `iPadOS` & `macOS`. 
 
 # 📺 Demo 
 
@@ -23,9 +23,9 @@ Please wait while the `.gif` files are loading...
 <img src="/Resources/03.gif" width="49%"> <img src="/Resources/04.gif" width="49%">
 
 # 👻 Features
-- Supports both `iPhone` & `iPad` devices
+- Supports `iPhone`, `iPad` & `macOS`-enabled devices
 - No graphical assets
-- Minimum deployment target is `iOS 14.0`
+- Minimum deployment target is `iOS 14.0` & `macOS 11.0`
 - `Swift 5.3`
 - Pure `SwiftUI 2.0` app
 - Score & merge streak system: when multiple merges occur in a row - you got a score multiplier 😎
