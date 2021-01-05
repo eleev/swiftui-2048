@@ -159,6 +159,7 @@
 		A9757F5A24CC571800847031 /* 03.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 03.gif; sourceTree = "<group>"; };
 		A9757F5B24CC571800847031 /* 02.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 02.gif; sourceTree = "<group>"; };
 		A9757F5C24CC571800847031 /* 04.gif */ = {isa = PBXFileReference; lastKnownFileType = image.gif; path = 04.gif; sourceTree = "<group>"; };
+		A9E400CF25A4730F00FE1F92 /* T2iles.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = T2iles.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -212,6 +213,7 @@
 		A9757EAA24CC47EC00847031 /* T2iles */ = {
 			isa = PBXGroup;
 			children = (
+				A9E400CF25A4730F00FE1F92 /* T2iles.entitlements */,
 				A9757EB424CC47EC00847031 /* Info.plist */,
 				A9757ED624CC481E00847031 /* Assets */,
 				A9757EB124CC47EC00847031 /* Preview Content */,
@@ -821,6 +823,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Tiled-Plain";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = T2iles/T2iles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"T2iles/Preview Content\"";
 				DEVELOPMENT_TEAM = T3K58FE38R;
@@ -833,6 +836,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.T2iles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -843,6 +847,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-Tiled-Plain";
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_ENTITLEMENTS = T2iles/T2iles.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_ASSET_PATHS = "\"T2iles/Preview Content\"";
 				DEVELOPMENT_TEAM = T3K58FE38R;
@@ -855,6 +860,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = eleev.astemir.T2iles;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = YES;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
