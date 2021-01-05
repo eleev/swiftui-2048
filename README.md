@@ -5,7 +5,7 @@
 [![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS-green.svg)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-**Last Update: 25/July/2020.**
+**Last Update: 03/August/2020.**
 
 ![](logo.png)
 
@@ -29,7 +29,6 @@ Please wait while the `.gif` files are loading...
 - `Swift 5.3`
 - Pure `SwiftUI 2.0` app
 - Score & merge streak system: when multiple merges occur in a row - you got a score multiplier 😎
-- Pure `SwiftUI 2.0` app
 - Settings
 - Interactive transitions
 - Property list based persistence for `Settings`
