@@ -19,8 +19,10 @@
 ## Gifs
 Please wait while the `.gif` files are loading...
 
-<img src="/Resources/01.gif" width="49%"> <img src="/Resources/02.gif" width="49%"> 
-<img src="/Resources/03.gif" width="49%"> <img src="/Resources/04.gif" width="49%">
+<img src="/Resources/01.gif" width="49.5%"> <img src="/Resources/02.gif" width="49.5%"> 
+<img src="/Resources/03.gif" width="49.5%"> <img src="/Resources/04.gif" width="49.5%">
+<img src="/Resources/macOS01.png" width="100%">
+ <img src="/Resources/macOS02.png" width="100%">
 
 # 👻 Features
 - Supports `iPhone`, `iPad` & `macOS`-enabled devices
