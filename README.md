@@ -3,9 +3,11 @@
 [![Language](https://img.shields.io/badge/Language-Swift_5.3-orange.svg)]()
 [![Framework](https://img.shields.io/badge/Framework-SwiftUI_2.0-red.svg)]()
 [![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS|macOS-green.svg)]()
+[![Last Commit](https://img.shields.io/github/last-commit/jvirus/swiftui-2048)]()
+[![NLOC](https://img.shields.io/tokei/lines/github/jvirus/swiftui-2048)]()
+[![Contributors](https://img.shields.io/github/contributors/jvirus/swiftui-2048)]()
+[![Repo Size](https://img.shields.io/github/repo-size/jvirus/swiftui-2048)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
-
-**Last Update: 05/January/2021.**
 
 ![](logo.png)
 
