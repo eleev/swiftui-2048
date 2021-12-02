@@ -1,7 +1,7 @@
 # swiftui-2048[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Language](https://img.shields.io/badge/Language-Swift_5.3-orange.svg)]()
-[![Framework](https://img.shields.io/badge/Framework-SwiftUI_2.0-red.svg)]()
+[![Language](https://img.shields.io/badge/Language-Swift_5.5-orange.svg)]()
+[![Framework](https://img.shields.io/badge/Framework-SwiftUI_3.0-red.svg)]()
 [![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS|macOS-green.svg)]()
 [![Last Commit](https://img.shields.io/github/last-commit/jvirus/swiftui-2048)]()
 [![NLOC](https://img.shields.io/tokei/lines/github/jvirus/swiftui-2048)]()
@@ -14,7 +14,7 @@
 ### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
 # ✍️ About 
-🎲 **100%** `SwiftUI 2.0`, classic 2048 game. Supports `iOS`, `iPadOS` & `macOS`. 
+🎲 **100%** `SwiftUI 3.0`, classic 2048 game. Supports `iOS`, `iPadOS` & `macOS`. 
 
 # 📺 Demo 
 
