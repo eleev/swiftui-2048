@@ -50,21 +50,24 @@ struct AudioSettingView: View {
                 .aspectRatio(contentMode: .fit)
                 .frame(height: previewSize.height / 3)
                 .id(systemImageName)
-                .transition(.asymmetric(insertion:
-                    AnyTransition
-                        .opacity
-                        .combined(with: .scale(scale: 1.0))
-                        .animation(Animation.modalSpring),
-                                        removal:
-                    AnyTransition
-                        .opacity
-                        .combined(with: .scale(scale: 0.0))
-                        .animation(Animation.modalSpring)))
+                .transition(
+                    .asymmetric(
+                        insertion: AnyTransition
+                            .opacity
+                            .combined(with: .scale(scale: 1.0))
+                            .animation(.modalSpring),
+                        removal:
+                            AnyTransition
+                            .opacity
+                            .combined(with: .scale(scale: 0.0))
+                            .animation(.modalSpring)
+                    )
+                )
         }
         .toggleStyle(CheckboxToggleStyle())
         .foregroundColor(Color.primary.opacity(0.5))
         .shadow(color: invertedBackgroundColor.opacity(0.5), radius: 10)
-        .animation(.modalSpring)
+        .animation(.modalSpring, value: isAudioEnabled)
         .padding([.leading, .leading, .top, .bottom])
     }
 }

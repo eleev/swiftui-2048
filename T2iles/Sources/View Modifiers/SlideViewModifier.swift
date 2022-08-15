@@ -9,15 +9,14 @@
 import SwiftUI
 
 struct SlideViewModifier<T: Gesture>: ViewModifier {
-    
     var gesture: T
     @Binding var presentEndGameModal: Bool
     @Binding var presentSideMenu: Bool
     
     func body(content: Content) -> some View {
         content
-            .gesture(self.gesture, including: .all)
-            .scaleEffect((self.presentEndGameModal || self.presentSideMenu) ? 0.9 : 1.0)
-            .allowsHitTesting(!(self.presentEndGameModal || self.presentSideMenu))
+            .gesture(gesture, including: .all)
+            .scaleEffect((presentEndGameModal || presentSideMenu) ? 0.9 : 1.0)
+            .allowsHitTesting(!(presentEndGameModal || presentSideMenu))
     }
 }

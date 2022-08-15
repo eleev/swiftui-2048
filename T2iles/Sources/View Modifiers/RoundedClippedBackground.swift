@@ -14,7 +14,7 @@ struct RoundedClippedBackground: ViewModifier {
 
     func body(content: Content) -> some View {
         content
-            .background(Rectangle().fill(self.backgroundColor))
+            .background(Rectangle().fill(backgroundColor))
             .clipShape(RoundedRectangle(cornerRadius: 30, style: .continuous))
             .shadow(color: Color.primary.opacity(0.3), radius: 20)
     }

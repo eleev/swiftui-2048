@@ -39,16 +39,14 @@ struct TileBoardView: View {
                         createBlock(nil, at: (x, y), proxy: proxy)
                     }
                 }
-                
                 ForEach(matrix.flatten(), id: \.tile.id) { item in
                     createBlock(item.tile, at: item.index, proxy: proxy)
                 }
-                .animation(
-                    .interpolatingSpring(stiffness: 800, damping: 200)
-                )
             }
-            .frame(width: calculateFrameSize(proxy),
-                   height: calculateFrameSize(proxy), alignment: .center)
+            .frame(
+                width: calculateFrameSize(proxy),
+                height: calculateFrameSize(proxy), alignment: .center
+            )
             .background(
                 Rectangle()
                     .fill(Color(red:0.76, green:0.76, blue:0.78, opacity: 1))
@@ -62,10 +60,11 @@ struct TileBoardView: View {
     
     // MARK: - Methods
     
-    func createBlock(_ block: IdentifiedTile?,
-                     at index: IndexedTile<IdentifiedTile>.Index,
-                     proxy: GeometryProxy
-                     ) -> some View {
+    func createBlock(
+        _ block: IdentifiedTile?,
+        at index: IndexedTile<IdentifiedTile>.Index,
+        proxy: GeometryProxy
+    ) -> some View {
         let blockView: TileView
         if let block = block {
             blockView = TileView(number: block.value)
@@ -90,6 +89,10 @@ struct TileBoardView: View {
                 position: CGPoint(x: position.x, y: position.y),
                 in: CGRect(x: 0, y: 0, width: frameSize, height: frameSize)
             ))
+            .animation(
+                .interpolatingSpring(stiffness: 800, damping: 200),
+                value: position
+            )
     }
     
     // MARK: - Private Methods

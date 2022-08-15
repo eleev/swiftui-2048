@@ -16,6 +16,6 @@ struct FilledBackgroundStyle: ButtonStyle {
             .scaleEffect(configuration.isPressed ? 0.9 : 1.0)
             .background(Color.primary)
             .cornerRadius(25)
-            .animation(.modalSpring)
+            .animation(.modalSpring, value: configuration.isPressed)
     }
 }

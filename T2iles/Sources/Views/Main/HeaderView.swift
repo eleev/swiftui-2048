@@ -27,7 +27,8 @@ struct HeaderView: View {
     // MARK: - Compited View Propeties
     
     private var scoreView: some View {
-        HStack {
+        let shouldShowReset = showResetButton()
+        return HStack {
             Text("Score")
                 .font(Font.system(.title, design: .monospaced).weight(.black))
                 .foregroundColor(Color(red:0.49, green:0.49, blue:0.49, opacity: 0.7))
@@ -36,7 +37,7 @@ struct HeaderView: View {
                 .font(Font.system(.title, design: .monospaced).weight(.black))
                 .foregroundColor(Color(red:0.59, green:0.59, blue:0.59, opacity: 1.00))
                 .transition(AnyTransition.move(edge: .bottom).combined(with: .opacity))
-                .animation(.modalSpring)
+                .animation(.modalSpring, value: shouldShowReset)
                 .id("Score \(self.score)")
             
             Text("x\(scoreMultiplier)")
@@ -44,9 +45,9 @@ struct HeaderView: View {
                 .foregroundColor(Color.primary.opacity(0.7))
                 .alignmentGuide(VerticalAlignment.center, computeValue: { $0[.bottom] })
         }
-        .opacity(showResetButton() ? 1.0 : 0.0)
+        .opacity(shouldShowReset ? 1.0 : 0.0)
         .transition(AnyTransition.move(edge: .trailing).combined(with: .opacity))
-        .animation(Animation.modalSpring)
+        .animation(.modalSpring, value: shouldShowReset)
         .id("Score hview: \(showResetButton())")
     }
     
@@ -83,7 +84,7 @@ struct HeaderView: View {
         }
         .foregroundColor(.gray)
         .padding()
-        .opacity(self.showResetButton() ? 1.0 : 0.0)
+        .opacity(showResetButton() ? 1.0 : 0.0)
     }
     
     private var titleView: some View {
@@ -91,7 +92,7 @@ struct HeaderView: View {
             .font(Font.system(size: 46).weight(.black))
             .foregroundColor(Color(red:0.29, green:0.29, blue:0.29, opacity: 1.00))
             .transition(AnyTransition.move(edge: .trailing).combined(with: .opacity))
-            .animation(Animation.modalSpring)
+            .animation(.modalSpring, value: showSideMenu)
             .id(title)
     }
     

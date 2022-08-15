@@ -45,7 +45,7 @@ final class GameLogic: ObservableObject {
     // MARK: - Initializers
     
     init(size: Int) {
-        self.boardSize = size
+        boardSize = size
         reset(boardSize: size)
         
         NotificationCenter
@@ -54,10 +54,10 @@ final class GameLogic: ObservableObject {
             .map {
                 $0.userInfo?[Notification.Name.gameBoardSizeUserInfoKey] as? BoardSize
         }
-        .sink {
+        .sink { [unowned self] in
             guard let gameBoardSize = $0 else { return }
             let rawValue = gameBoardSize.rawValue
-            self.reset(boardSize: rawValue)
+            reset(boardSize: rawValue)
         }.store(in: &cancellables)
     }
     
@@ -93,11 +93,13 @@ final class GameLogic: ObservableObject {
             var rowSnapshot = [IdentifiedTile?]()
             var compactRow = [IdentifiedTile]()
            
-            computeIntermediateSnapshot(&rowSnapshot,
-                                        &compactRow,
-                                        axis: axis,
-                                        currentRow: row)
-                    
+            computeIntermediateSnapshot(
+                &rowSnapshot,
+                &compactRow,
+                axis: axis,
+                currentRow: row
+            )
+            
             if merge(blocks: &compactRow, reverse: direction == .down || direction == .right) {
                 hasMergedBlocks = true
             }
@@ -116,17 +118,21 @@ final class GameLogic: ObservableObject {
                 tileMatrix.add($1, to: axis ? ($0, row) : (row, $0))
             }
         }
-        return finalizeMove(previousMatrixSnapshot,
-                            hasMoved: moved,
-                            hasMergedBlocks: hasMergedBlocks)
+        return finalizeMove(
+            previousMatrixSnapshot,
+            hasMoved: moved,
+            hasMergedBlocks: hasMergedBlocks
+        )
     }
     
     // MARK: - Private Methods
     
-    private func computeIntermediateSnapshot(_ rowSnapshot: inout [IdentifiedTile?],
-                                             _ compactRow: inout [IdentifiedTile],
-                                             axis: Bool,
-                                             currentRow row: Int) {
+    private func computeIntermediateSnapshot(
+        _ rowSnapshot: inout [IdentifiedTile?],
+        _ compactRow: inout [IdentifiedTile],
+        axis: Bool,
+        currentRow row: Int
+    ) {
         for col in 0..<boardSize {
             if let block = tileMatrix[axis ? (col, row) : (row, col)] {
                 rowSnapshot.append(block)
@@ -270,9 +276,12 @@ final class GameLogic: ObservableObject {
         var blankLocations = blankLocations
         blankLocations[placeLocIndex] = lastLoc
         placeLocIndex = Int.random(in: 0..<(blankLocations.count - 1))
-        tileMatrix.add(IdentifiedTile(id: mutableInstanceId,
-                                        value: 2),
-                         to: blankLocations[placeLocIndex])
+        tileMatrix.add(
+            IdentifiedTile(
+                id: mutableInstanceId,
+                value: 2),
+            to: blankLocations[placeLocIndex]
+        )
         return true
     }
 }

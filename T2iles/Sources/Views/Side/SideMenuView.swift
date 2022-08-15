@@ -34,14 +34,12 @@ struct SideMenuView: View {
             Group {
                 VStack(spacing: interItemSpacing) {
                     Spacer()
-                    
                     ForEach(0..<items.count, id: \.self) { item in
-                        self.item(named: self.items[item].title) {
-                            selectedView = self.items[item]
+                        self.item(named: items[item].title) {
+                            selectedView = items[item]
                             onMenuChangeHandler()
                         }
                     }
-                    
                     Spacer()
                 }
                 .padding()
@@ -68,8 +66,10 @@ struct SideMenuView: View {
                 .bold()
                 .foregroundColor(.primary)
                 .animation(.modalSpring)
-                .shadow(color: colorSchemeBackgroundTheme.invertedBackgroundColor(for: colorScheme),
-                        radius: cornerRadius)
+                .shadow(
+                    color: colorSchemeBackgroundTheme.invertedBackgroundColor(for: colorScheme),
+                    radius: cornerRadius
+                )
         }.eraseToAnyView
     }
 }

@@ -11,6 +11,8 @@ import Combine
 
 struct CompositeView: View {
     
+    // MARK: - Proeprties
+    
     @Environment(\.horizontalSizeClass) var horizontalSizeClass: UserInterfaceSizeClass?
     
     @State private var ignoreGesture = false
@@ -31,45 +33,50 @@ struct CompositeView: View {
     
     @AppStorage(AppStorageKeys.audio.rawValue) var isAudioEnabled: Bool = true
     
+    // MARK: - Initializers
+    
     init(board: GameLogic) {
         self.logic = board
     }
+    
+    // MARK: - Drag Gesture
     
     private var gesture: some Gesture {
         let threshold: CGFloat = 25
         
         let drag = DragGesture()
             .onChanged { v in
-                guard !self.ignoreGesture else { return }
+                guard !ignoreGesture else { return }
                 
                 guard abs(v.translation.width) > threshold ||
                     abs(v.translation.height) > threshold else {
                         return
                 }
-                
                 withTransaction(Transaction()) {
-                    self.ignoreGesture = true
+                    ignoreGesture = true
                     
                     if v.translation.width > threshold {
                         // Move right
-                        self.logic.move(.right)
+                        logic.move(.right)
                     } else if v.translation.width < -threshold {
                         // Move left
-                        self.logic.move(.left)
+                        logic.move(.left)
                     } else if v.translation.height > threshold {
                         // Move down
-                        self.logic.move(.down)
+                        logic.move(.down)
                     } else if v.translation.height < -threshold {
                         // Move up
-                        self.logic.move(.up)
+                        logic.move(.up)
                     }
                 }
         }
         .onEnded { _ in
-            self.ignoreGesture = false
+            ignoreGesture = false
         }
         return drag
     }
+    
+    // MARK: - Comformance to View protocol
     
     var body: some View {
         GeometryReader { proxy in
@@ -78,12 +85,14 @@ struct CompositeView: View {
                     Group {
                         self.headerView(proxy)
 
-                        FactoryContentView(selectedView: $selectedView,
-                                           gesture: gesture,
-                                           gameLogic: logic,
-                                           presentEndGameModal: $presentEndGameModal,
-                                           presentSideMenu: $presentSideMenu)
-                            .onReceive(logic.$score) { (publishedScore) in
+                        FactoryContentView(
+                            selectedView: $selectedView,
+                            gesture: gesture,
+                            gameLogic: logic,
+                            presentEndGameModal: $presentEndGameModal,
+                            presentSideMenu: $presentSideMenu
+                        )
+                        .onReceive(logic.$score) { (publishedScore) in
                             score = publishedScore
                         }
                         .onReceive(logic.$mergeMultiplier) { (publishedScoreMultiplier) in
@@ -98,12 +107,16 @@ struct CompositeView: View {
                 }
                 .modifier(RoundedClippedBackground(backgroundColor: colorSchemeBackgroundTheme.backgroundColor(for: colorScheme),
                                                    proxy: proxy))
-                .modifier(MainViewModifier(proxy: proxy,
-                                           presentEndGameModal: $presentEndGameModal,
-                                           presentSideMenu: $presentSideMenu,
-                                           viewState: $viewState))
-                    .onTapGesture {
-                        guard !hasGameEnded else { return } // Disable on tap dismissal of the end game modal view
+                .modifier(
+                    MainViewModifier(
+                        proxy: proxy,
+                        presentEndGameModal: $presentEndGameModal,
+                        presentSideMenu: $presentSideMenu,
+                        viewState: $viewState
+                    )
+                )
+                .onTapGesture {
+                    guard !hasGameEnded else { return } // Disable on tap dismissal of the end game modal view
                         
                         withAnimation(.modalSpring) {
                             presentEndGameModal = false
@@ -119,15 +132,18 @@ struct CompositeView: View {
                     }
                 }
                 
-                GameStateBottomView(hasGameEnded: $hasGameEnded,
-                                    presentEndGameModal: $presentEndGameModal,
-                                    sideMenuViewState: $sideMenuViewState,
-                                    score: $score,
-                                    resetGame: resetGame)
-                
-                CompositeSideView(selectedView: $selectedView,
-                                  sideMenuViewState: $sideMenuViewState,
-                                  presentSideMenu: $presentSideMenu)
+                GameStateBottomView(
+                    hasGameEnded: $hasGameEnded,
+                    presentEndGameModal: $presentEndGameModal,
+                    sideMenuViewState: $sideMenuViewState,
+                    score: $score,
+                    resetGame: resetGame
+                )
+                CompositeSideView(
+                    selectedView: $selectedView,
+                    sideMenuViewState: $sideMenuViewState,
+                    presentSideMenu: $presentSideMenu
+                )
             }
         }
         .edgesIgnoringSafeArea(.all)
@@ -136,17 +152,19 @@ struct CompositeView: View {
     // MARK: - Methods
     
     private func headerView(_ proxy: GeometryProxy) -> some View {
-        HeaderView(proxy: proxy,
-                   showSideMenu: $presentSideMenu,
-                   title: selectedView.title,
-                   score: $score,
-                   scoreMultiplier: $scoreMultiplier,
-                   newGameAction: {
-                    presentEndGameModal = true
-        },
-                   showResetButton: {
-                    selectedView == .game
-        })
+        HeaderView(
+            proxy: proxy,
+            showSideMenu: $presentSideMenu,
+            title: selectedView.title,
+            score: $score,
+            scoreMultiplier: $scoreMultiplier,
+            newGameAction: {
+                presentEndGameModal = true
+            },
+            showResetButton: {
+                selectedView == .game
+            }
+        )
     }
     
     private func resetGame() {
@@ -154,14 +172,20 @@ struct CompositeView: View {
     }
 }
 
+// MARK: - Previews
+
 struct CompositeView_Previews : PreviewProvider {
     static var previews: some View {
         Group {
-            CompositeView(board: GameLogic(size: BoardSize.fourByFour.rawValue))
-                .colorScheme(.dark)
+            CompositeView(
+                board: GameLogic(size: BoardSize.fourByFour.rawValue)
+            )
+            .colorScheme(.dark)
     
-            CompositeView(board: GameLogic(size: BoardSize.fourByFour.rawValue))
-                .colorScheme(.light)
+            CompositeView(
+                board: GameLogic(size: BoardSize.fourByFour.rawValue)
+            )
+            .colorScheme(.light)
         }
     }
 }

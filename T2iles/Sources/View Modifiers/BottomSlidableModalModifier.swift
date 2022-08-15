@@ -14,28 +14,28 @@ struct BottomSlidableModalModifier: ViewModifier {
     @Binding var sideMenuViewState: CGSize
     @Binding var hasGameEnded: Bool
     var onGameEndCompletion: () -> Void = {  }
+    let sideMenuDragHeight: CGFloat = 100
     
     func body(content: Content) -> some View {
         content
-            .offset(y: self.presentEndGameModal ? (proxy.size.height / 2.0) : (proxy.size.height + proxy.size.height / 2))
-            .offset(y: self.sideMenuViewState.height)
-            .animation(.modalSpring)
+            .offset(y: presentEndGameModal ? (proxy.size.height / 2.0) : (proxy.size.height + proxy.size.height / 2))
+            .offset(y: sideMenuViewState.height)
+            .animation(.modalSpring, value: presentEndGameModal)
             .gesture(
                 DragGesture().onChanged { value in
                     if value.translation.height > 0 {
-                        self.sideMenuViewState.height = value.translation.height
+                        sideMenuViewState.height = value.translation.height
                     }
                 }
                 .onEnded { value in
-                    if self.sideMenuViewState.height > 100 {
-                        
+                    if sideMenuViewState.height > sideMenuDragHeight {
                         withAnimation(.modalSpring) {
-                            self.presentEndGameModal = false
-                            self.hasGameEnded = false
-                            self.onGameEndCompletion()
+                            presentEndGameModal = false
+                            hasGameEnded = false
+                            onGameEndCompletion()
                         }
                     }
-                    self.sideMenuViewState = .zero
+                    sideMenuViewState = .zero
                 }
         )
     }
