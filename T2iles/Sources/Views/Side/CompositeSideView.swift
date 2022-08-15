@@ -9,7 +9,6 @@
 import SwiftUI
 
 struct CompositeSideView: View {
-    
     @Binding var selectedView: SelectedView
     @Binding var sideMenuViewState: CGSize
     @Binding var presentSideMenu: Bool
@@ -24,7 +23,7 @@ struct CompositeSideView: View {
                 .offset(x: presentSideMenu ? -(proxy.size.width / 2.0) : -(proxy.size.width + proxy.size.width / 2))
                 .offset(x: -sideMenuViewState.width)
                 .rotation3DEffect(Angle(degrees: presentSideMenu ? Double(sideMenuViewState.width / 10) + 10 : 0), axis: (x: 0, y: 10, z: 0))
-                .animation(.modalSpring)
+                .animation(.modalSpring, value: presentSideMenu)
                 .gesture(
                     DragGesture().onChanged { value in
                         if value.translation.width < 0 {

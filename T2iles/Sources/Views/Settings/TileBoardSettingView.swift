@@ -53,13 +53,15 @@ struct TileBoardSettingView: View {
                 .resizable()
                 .aspectRatio(contentMode: .fit)
                 .frame(height: previewSize.height)
-                .animation(nil)
         }
         .toggleStyle(CheckboxToggleStyle())
         .foregroundColor(Color.primary.opacity(0.5))
         .opacity(isSelected.wrappedValue ? 1.0 : 0.5)
-        .shadow(color: invertedBackgroundColor.opacity(0.5), radius: isSelected.wrappedValue ? 10 : 0)
-        .animation(.modalSpring)
+        .shadow(
+            color: invertedBackgroundColor.opacity(0.5),
+            radius: isSelected.wrappedValue ? 10 : 0
+        )
+        .animation(.modalSpring, value: isSelected.wrappedValue)
         .padding([.top, .bottom])
     }
 }

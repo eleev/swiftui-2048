@@ -1,6 +1,6 @@
 # swiftui-2048[![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/sindresorhus/awesome)
 
-[![Language](https://img.shields.io/badge/Language-Swift_5.5-orange.svg)]()
+[![Language](https://img.shields.io/badge/Language-Swift_5.7-orange.svg)]()
 [![Framework](https://img.shields.io/badge/Framework-SwiftUI_3.0-red.svg)]()
 [![Shaders](https://img.shields.io/badge/Platforms-iOS|iPadOS|macOS-green.svg)]()
 [![Last Commit](https://img.shields.io/github/last-commit/jvirus/swiftui-2048)]()
@@ -32,7 +32,7 @@ Please wait while the `.gif` files are loading...
 - Supports `iPhone`, `iPad` & `macOS`-enabled devices
 - No graphical assets
 - Minimum deployment target is `iOS 14.0` & `macOS 11.0`
-- `Swift 5.3`
+- `Swift 5.7`
 - Pure `SwiftUI 2.0` app
 - Score & merge streak system: when multiple merges occur in a row - you got a score multiplier 😎
 - Settings

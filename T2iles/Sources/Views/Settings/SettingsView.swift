@@ -47,8 +47,10 @@ struct SettingsView: View {
                         .fontWeight(.bold)
                 }
             ) {
-                TileBoardSettingView(invertedBackgroundColor: self.invertedBackgroundColor,
-                                     previewSize: self.previewSize)
+                TileBoardSettingView(
+                    invertedBackgroundColor: invertedBackgroundColor,
+                    previewSize: previewSize
+                )
             }
             Section(header:
                 VStack(alignment: .leading) {
@@ -62,8 +64,10 @@ struct SettingsView: View {
                         .fontWeight(.bold)
                 }
             ) {
-                AudioSettingView(invertedBackground: self.invertedBackgroundColor,
-                                 previewSize: self.previewSize)
+                AudioSettingView(
+                    invertedBackground: invertedBackgroundColor,
+                    previewSize: previewSize
+                )
             }
         }
         .listStyle(InsetGroupedListStyle())

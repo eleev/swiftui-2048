@@ -15,7 +15,7 @@ struct GameBoardSizeState {
     private(set) var boardSize: BoardSize = .fourByFour {
         didSet {
             defaults.set(boardSize.rawValue, forKey: Notification.Name.gameBoardSize.rawValue)
-            self.publishState()
+            publishState()
         }
     }
     
@@ -88,8 +88,10 @@ struct GameBoardSizeState {
     // MARK: - Private Methods
     
     private func publishState() {
-        NotificationCenter.default.post(name: .gameBoardSize,
-                                        object: nil,
-                                        userInfo: [Notification.Name.gameBoardSizeUserInfoKey : boardSize])
+        NotificationCenter.default.post(
+            name: .gameBoardSize,
+            object: nil,
+            userInfo: [Notification.Name.gameBoardSizeUserInfoKey : boardSize]
+        )
     }
 }
