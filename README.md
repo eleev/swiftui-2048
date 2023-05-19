@@ -9,7 +9,7 @@
 [![Repo Size](https://img.shields.io/github/repo-size/jvirus/swiftui-2048)]()
 [![License](https://img.shields.io/badge/License-MIT-blue.svg)]()
 
-![](logo.png)
+![](eleev_midhourney_tiles_logo.jpeg)
 
 ### If you like the project, please give it a star ⭐ It will show the creator your appreciation and help others to discover the repo.
 
